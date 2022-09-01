@@ -16,10 +16,13 @@ const main = () => {
       core.setOutput(`_${index}`, part);
     });
 
-    core.setOutput('qaq', `
+    const data = `
       https://google.com
       https://facebook.com
-    `);
+    `;
+    core.setOutput('qaq', data);
+
+    console.log(`data    : ${data}`);
 
     core.setOutput('length', parts.length);
   } catch (error) {

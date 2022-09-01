@@ -1,5 +1,5 @@
-author: Max Romanyuta
-name: Simple Split
+author: Arthur Baghdasaryan
+name: Convert string to multiline string
 description: This action will split the string by separator
 branding:
   icon: feather
@@ -8,17 +8,9 @@ inputs:
   string:
     description: String to split
     required: true
-  separator:
-    description: Separator to split a string
-    required: false
-    default: ' '
-  limit:
-    description: Limit on the number of substrings to be included in the array
-    default: '-1'
-    required: false
 outputs:
   result:
     description: Action Result
 runs:
-  using: node12
+  using: node16
   main: ./dist/index.js

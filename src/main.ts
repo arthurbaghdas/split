@@ -16,6 +16,11 @@ const main = () => {
       core.setOutput(`_${index}`, part);
     });
 
+    core.setOutput('qaq', `
+      https://google.com
+      https://facebook.com
+    `);
+
     core.setOutput('length', parts.length);
   } catch (error) {
     core.setFailed(error.message);
